@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  padding: 80px 100px;
+}
+.header h1 {
+  text-align: center;
+  margin: 40px;
+  letter-spacing: 10px;
+  font-size: 50px;
+}
+.header h2 {
+  text-align: center;
+  margin: 10px;
+  font-weight: 400;
+}
+section {
+  display: flex;
+  margin-top: 30px;
+}
+section h2 {
+  margin: 8px 0;
+  font-weight: 600;
+}
+section h3 {
+  margin: 5px 0;
+  font-weight: 550;
+}
+.left-section {
+  flex-basis: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+}
+.skills ul,
+.projects ul,
+.certifications ul {
+  padding-left: 24px;
+}
+.right-section {
+  flex-basis: 65%;
+  border-left: 1px solid rgb(161, 155, 155);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.experience ul {
+  padding-left: 20px;
+}
+
+.skills,
+.experience,
+.projects,
+.contact,
+.education,
+.certifications {
+  background-color: rgb(242, 243, 243);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contact a {
+  color: rgb(76, 76, 241);
+}
+
+@media screen and (max-width: 800px) {
+  .header h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 40px;
+  }
+  .header h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-section {
+    border: none;
+  }
+  .section h2 {
+    font-size: 40px;
+  }
+
+  .skills,
+  .experience,
+  .projects,
+  .contact,
+  .education,
+  .certifications {
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+  }
+  body {
+    padding: 50px 10px;
+  }
+}
